@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фуршетные блюда - Шеф Тимьян</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../furshet.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Назад к категориям
+            </a>
+            <h1 class="restaurant-name">
+                <i class="fas fa-hamburger"></i> Фуршетные блюда
+            </h1>
+        </header>
+
+            <main class="main-content">
+            <div class="notes">
+                <p><i class="fas fa-info-circle"></i> Заказ оформляется за 3 дня до мероприятия</p>
+            </div>
+           
+            <!-- Таблица меню -->
+            <div class="menu-section">
+                <h2><i class="fas fa-list"></i> Список блюд</h2>
+                <div class="menu-table">
+                    <!-- Заголовок таблицы -->
+                    <div class="table-header">
+                        <div>Название блюда</div>
+                        <div>Выход, г</div>
+                        <div>Цена, руб.</div>
+                        <div>Состав</div>
+                    </div>
+
+                    <!-- Блюдо 1 - Канапе овощное -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе овощное</strong>
+                        </div>
+                        <div class="col-weight">60 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc1">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc1">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Помидор «Черри», огурец, маслина, сыр «Моцарелла»</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 2 - Канапе сырное -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе сырное</strong>
+                        </div>
+                        <div class="col-weight">20 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc2">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc2">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Сулугуни, брынза, виноград</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 3 - Канапе рыбное -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе рыбное</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">180 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc3">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc3">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Семга слабосоленая, масляная рыба, лимон, маслина</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 4 - Канапе мясное -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе мясное</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">140 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc4">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc4">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Буженина, рулет куриный, корнишон, помидор «Черри»</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 5 - Овощной микс в шотах -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Овощной микс в шотах</strong>
+                        </div>
+                        <div class="col-weight">60 г</div>
+                        <div class="col-price">140 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc5">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc5">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Помидор «Черри», огурец, перец болгарский, лист салата, сыр «Моцарелла», соус «Песто»</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 6 - Тарталетка с салатом «Оливье» -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Тарталетка с салатом «Оливье»</strong>
+                        </div>
+                        <div class="col-weight">55 г</div>
+                        <div class="col-price">130 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc6">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc6">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Салат «Оливье» с курицей или колбасой в тарталетке</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 7 - Тарталетка с салатом «Мясной» -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Тарталетка с салатом «Мясной»</strong>
+                        </div>
+                        <div class="col-weight">55 г</div>
+                        <div class="col-price">130 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc7">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc7">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Салат «Мясной» с курицей и жареными грибами в тарталетке</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 8 - Тарталетка с жульеном -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Тарталетка с жульеном</strong>
+                        </div>
+                        <div class="col-weight">55 г</div>
+                        <div class="col-price">130 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc8">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc8">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Жульен с курицей и грибами в тарталетке</p>
+                        </div>
+                    </div>
+    
+                    <!-- Блюдо 9 - Валованы с красной икрой -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Валованы с красной икрой</strong>
+                        </div>
+                        <div class="col-weight">30 г</div>
+                        <div class="col-price">300 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc9">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc9">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Красная икра, лимон, масло сливочное, зелень</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 10 - Валованы с семгой -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Валованы с семгой</strong>
+                        </div>
+                        <div class="col-weight">30 г</div>
+                        <div class="col-price">170 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc10">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc10">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Семга слабосоленая, масло сливочное, лимон, зелень</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 11 - Валованы с творожным муссом -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Валованы с творожным муссом</strong>
+                        </div>
+                        <div class="col-weight">35 г</div>
+                        <div class="col-price">110 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc11">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc11">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Творожный сыр, тархун</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 12 - Рулет из говяжьего языка с сыром -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Рулет из говяжьего языка с сыром</strong>
+                        </div>
+                        <div class="col-weight">40 г</div>
+                        <div class="col-price">170 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc12">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc12">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Говяжий язык, болгарский перец, сыр «Филадельфия», лук зеленый, брускетта из белого хлеба</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 13 - Мини-блинчики с семгой -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-блинчики с семгой и сыром</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">220 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc13">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc13">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Семга слабосоленая, сыр «Филадельфия»</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 14 - Мини-блинчики с ветчиной и сыром -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-блинчики с ветчиной и сыром</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc14">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc14">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Ветчина, сыр</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 15 - Мини-блинчики с куриным фаршем -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-блинчики с куриным фаршем</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc15">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc15">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Фарш куриный</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 16 - Мини-блинчики с грибами и сыром -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-блинчики с грибами и сыром</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc16">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc16">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Грибы, сыр</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 17 - Мини-блинчики с творожным муссом -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-блинчики с творожным муссом</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc17">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc17">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Творожный мусс</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 18 - Мини-блинчики с фаршем из индейки -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-блинчики с фаршем из индейки</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">130 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc18">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc18">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Фарш из индейки</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 19 - Мини-конверты с ветчиной и сыром -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-конверты с ветчиной и сыром</strong>
+                        </div>
+                        <div class="col-weight">60 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc19">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc19">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Ветчина, сыр</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 20 - Мини-конверты с грибами и сыром -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-конверты с грибами и сыром</strong>
+                        </div>
+                        <div class="col-weight">60 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc20">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc20">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Грибы, сыр</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 21 - Мини-конверты с курицей и сыром -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-конверты с курицей и сыром</strong>
+                        </div>
+                        <div class="col-weight">60 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc21">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc21">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Курица, сыр</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 22 - Мини-конверты с яблоками и изюмом -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-конверты с яблоками и изюмом</strong>
+                        </div>
+                        <div class="col-weight">60 г</div>
+                        <div class="col-price">100 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc22">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc22">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Яблоки, изюм, корица</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 23 - Мини профитроли -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини профитроли</strong>
+                        </div>
+                        <div class="col-weight">35 г</div>
+                        <div class="col-price">90 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc23">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc23">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Печень куриная, сливки, лук, морковь, оливковое масло</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 24 - Мини круассан с семгой -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини круассан с семгой</strong>
+                        </div>
+                        <div class="col-weight">65 г</div>
+                        <div class="col-price">210 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc24">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc24">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Семга слабосоленая, масло сливочное, лист салата, лимон, огурец</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 25 - Мини круассан с говяжьим языком -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини круассан с говяжьим языком</strong>
+                        </div>
+                        <div class="col-weight">65 г</div>
+                        <div class="col-price">190 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc25">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc25">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Говяжий язык, соус с хреном, огурец, лист салата</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 26 - Мини круассан с ростбифом -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини круассан с ростбифом</strong>
+                        </div>
+                        <div class="col-weight">65 г</div>
+                        <div class="col-price">210 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc26">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc26">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Телятина, сливочно-творожный крем, лист салата, болгарский перец</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 27 - Мини круассан с ветчиной -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини круассан с ветчиной</strong>
+                        </div>
+                        <div class="col-weight">65 г</div>
+                        <div class="col-price">120 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc27">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc27">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Ветчина, сливочный сыр, лист салата, огурец</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 28 - Мини круассан с бужениной -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини круассан с бужениной</strong>
+                        </div>
+                        <div class="col-weight">65 г</div>
+                        <div class="col-price">130 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc28">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc28">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Буженина, соус «Цахтон», лист салата, огурец</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 29 - Мини круассан с куриным галантином -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини круассан с куриным галантином</strong>
+                        </div>
+                        <div class="col-weight">65 г</div>
+                        <div class="col-price">120 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc29">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc29">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Галантин куриный, соус «Цезарь», огурец, лист салата</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 30 - Мини круассан с индейкой -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини круассан с индейкой</strong>
+                        </div>
+                        <div class="col-weight">65 г</div>
+                        <div class="col-price">150 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc30">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc30">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Индейка</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 31 - Пирог с капустой -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирог с капустой</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">800 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc31">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc31">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Капуста</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 32 - Пирог с картошкой и печенью -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирог с картошкой и печенью</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">1000 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc32">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc32">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Картошка, печень</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 33 - Пирог с грибами и картошкой -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирог с грибами и картошкой</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">1000 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc33">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc33">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Грибы, картошка</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 34 - Пирог с куриным фаршем -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирог с куриным фаршем</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">1000 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc34">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc34">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Куриный фарш</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 35 - Пирог с яблоком -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирог с яблоком</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">1000 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc35">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc35">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Яблоки</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 36 - Пирог с вишней -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирог с вишней</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">1000 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc36">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc36">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Вишня</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 37 - Пирог с картошкой -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирог с картошкой</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">800 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc37">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc37">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Картошка</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 38 - Пирог с рисом, яйцом и зеленью -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирог с рисом, яйцом и зеленью</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">800 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc38">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc38">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Рис, яйцо, зелень</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 39 - Пирожок -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Пирожок</strong>
+                        </div>
+                        <div class="col-weight">80 г</div>
+                        <div class="col-price">75 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc39">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc39">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> (выберите начинку: капуста, картошка/печень, грибы/картошка, куриный фарш, яблоко, вишня)</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 40 - Мини пирожки -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини пирожки</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">55 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc40">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc40">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> (выберите начинку: капуста, картошка/печень, грибы/картошка, куриный фарш, яблоко, вишня)</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 41 - Фрукты по сезону -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Фрукты по сезону</strong>
+                        </div>
+                        <div class="col-weight">1 кг</div>
+                        <div class="col-price">1000 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc41">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc41">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Сезонные фрукты в ассортименте</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 42 - Булочки мини -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Булочки мини пшеничные</strong>
+                        </div>
+                        <div class="col-weight">50 г</div>
+                        <div class="col-price">40 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc42">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc42">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Пшеничные булочки мини</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 43 - Мини-люля куриные -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Мини-люля куриные</strong>
+                        </div>
+                        <div class="col-weight">80 г</div>
+                        <div class="col-price">160 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc43">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc43">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Куриный фарш в тонком лаваше с зеленью и огурцом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <footer class="footer">
+            <a href="../furshet.html" class="btn">
+                <i class="fas fa-arrow-left"></i> Назад к категориям
+            </a>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

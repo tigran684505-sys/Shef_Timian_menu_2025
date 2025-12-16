@@ -1,0 +1,727 @@
+/* ==================== ГЛОБАЛЬНЫЕ НАСТРОЙКИ ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Фиксируем скроллбар - предотвращаем скачки */
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fdf8 100%);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ==================== ШАПКА ==================== */
+.header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
+    overflow: hidden;
+}
+
+.restaurant-name {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.restaurant-name i {
+    margin-right: 20px;
+    color: #FFF8E1;
+}
+
+.restaurant-info {
+    margin-top: 20px;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    opacity: 0.95;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.motto {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    font-style: italic;
+}
+
+/* Кнопка назад */
+.back-btn {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== ОСНОВНОЙ КОНТЕНТ ==================== */
+.main-content {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Приветственная секция */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.welcome-section h2 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.welcome-section p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* ==================== КАРТОЧКИ НА ГЛАВНОЙ ==================== */
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 380px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-color: #4CAF50;
+}
+
+.card-icon {
+    font-size: 4rem;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+}
+
+.card h3 {
+    color: #2E7D32;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* ==================== КАТЕГОРИИ МЕНЮ ==================== */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.category-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    overflow: hidden;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    border-color: #4CAF50;
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+}
+
+.category-card h3 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.category-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ==================== КНОПКИ ==================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    padding: 16px 35px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+    background: linear-gradient(to right, #388E3C, #4CAF50);
+}
+
+.btn i {
+    font-size: 1.2rem;
+}
+
+/* ==================== ТАБЛИЦА МЕНЮ ==================== */
+.menu-section {
+    margin-top: 40px;
+}
+
+.menu-section h2 {
+    color: #2E7D32;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Таблица */
+.menu-table {
+    border: 2px solid #E8F5E9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    background: white;
+}
+
+/* Заголовок таблицы */
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 0.8fr 0.8fr;
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Строка с блюдом */
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 0.8fr 0.8fr;
+    padding: 18px 20px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    text-align: center;
+    background: white;
+    transition: background-color 0.3s ease;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-row:hover {
+    background: #f0f9f0;
+}
+
+/* Строка с описанием (ПЛАВНОЕ ОТКРЫТИЕ) */
+.description-row {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.3s ease;
+    background: transparent;
+}
+
+.description-row.active {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.description-content {
+    padding: 20px 25px;
+    margin: 0 20px 15px;
+    background: #F8FFF8;
+    border: 1px solid #E8F5E9;
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.description-content p {
+    color: #333;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.description-content strong {
+    color: #2E7D32;
+}
+
+/* Колонки таблицы */
+.col-name {
+    text-align: left;
+    font-weight: 500;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.col-name strong {
+    color: #2E7D32;
+    font-size: 1.15rem;
+}
+
+.col-weight, .col-price {
+    color: #555;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.col-price {
+    color: #4CAF50;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Кнопка состава */
+.desc-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.desc-btn:hover {
+    background: #388E3C;
+    transform: scale(1.1);
+}
+
+.desc-btn.active {
+    background: #388E3C;
+}
+
+/* ==================== ИНФОРМАЦИОННЫЕ БЛОКИ ==================== */
+.notes {
+    background: #FFFDE7;
+    border-left: 4px solid #FFD600;
+    padding: 25px 30px;
+    margin-bottom: 40px;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+.notes h3 {
+    color: #5D4037;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notes p {
+    color: #5D4037;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notes i {
+    color: #4CAF50;
+}
+
+/* Информационная сетка */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.info-item i {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.info-item strong {
+    display: block;
+    color: #2E7D32;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.info-item p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* ==================== ПОДВАЛ ==================== */
+.footer {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer-contacts {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* ==================== АДАПТИВНОСТЬ ==================== */
+@media (max-width: 992px) {
+    .table-header {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    
+    .table-row {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .restaurant-name {
+        font-size: 2rem;
+        padding-top: 60px;
+        text-align: center;
+    }
+    
+    .back-btn {
+        position: relative;
+        display: inline-flex;
+        margin: 0 auto 20px;
+        left: 0;
+        top: 0;
+        justify-content: center;
+        width: fit-content;
+    }
+    
+    .header {
+        padding: 30px 20px;
+    }
+    
+    .main-content {
+        padding: 25px;
+    }
+    
+    .menu-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .categories {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Адаптивность таблицы */
+    .table-header {
+        display: none;
+    }
+    
+    .table-row {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "name"
+            "details"
+            "action";
+        gap: 15px;
+        padding: 25px;
+        text-align: center;
+    }
+    
+    .col-name {
+        grid-area: name;
+        text-align: center;
+        padding-left: 0;
+        white-space: normal;
+    }
+    
+    .col-weight {
+        grid-area: details;
+    }
+    
+    .col-price {
+        grid-area: details;
+    }
+    
+    .col-action {
+        grid-area: action;
+    }
+    
+    /* Группируем вес и цену */
+    .table-row .col-weight,
+    .table-row .col-price {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    
+    .description-content {
+        margin: 0 10px 10px;
+        padding: 15px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer {
+        padding: 30px 20px;
+    }
+    
+    .footer-contacts {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .restaurant-name {
+        font-size: 1.7rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .card-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 3rem;
+    }
+    
+    .btn {
+        padding: 14px 25px;
+        font-size: 1rem;
+    }
+    
+    .menu-table {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .table-row {
+        border-bottom: 2px solid #E8F5E9;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+}
+
+/* ==================== АНИМАЦИИ ==================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .category-card {
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: calc(var(--animation-order, 0) * 0.1s);
+    opacity: 0;
+}
+
+/* ==================== УТИЛИТЫ ==================== */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* ==================== ИКОНКИ FONT AWESOME ==================== */
+/* (оставляем ваши существующие иконки) */
+.fa-plate:before { content: "\f7d8"; }
+.fa-snowflake:before { content: "\f2dc"; }
+.fa-seedling:before { content: "\f4d8"; }
+.fa-fire:before { content: "\f06d"; }
+.fa-drumstick-bite:before { content: "\f6d7"; }
+.fa-carrot:before { content: "\f787"; }
+.fa-mortar-pestle:before { content: "\f5a7"; }
+.fa-crown:before { content: "\f521"; }
+.fa-wine-glass-alt:before { content: "\f5ce"; }
+.fa-leaf:before { content: "\f06c"; }
+.fa-utensils:before { content: "\f2e7"; }
+.fa-info-circle:before { content: "\f05a"; }
+.fa-clock:before { content: "\f017"; }
+.fa-phone:before { content: "\f095"; }
+.fa-truck:before { content: "\f0d1"; }
+.fa-hourglass-half:before { content: "\f252"; }
+.fa-home:before { content: "\f015"; }
+.fa-arrow-left:before { content: "\f060"; }
+.fa-arrow-right:before { content: "\f061"; }
+.fa-bread-slice:before { content: "\f7ec"; }
+.fa-utensil-spoon:before { content: "\f2e5"; }
+.fa-fish:before { content: "\f578"; }
+.fa-ice-cream:before { content: "\f810"; }
+.fa-apple-alt:before { content: "\f5d1"; }
+.fa-glass-whiskey:before { content: "\f7a0"; }
+.fa-clipboard-check:before { content: "\f46c"; }
+.fa-check-circle:before { content: "\f058"; }
+.fa-list:before { content: "\f03a"; }
+.fa-info:before { content: "\f129"; }
+.fa-times:before { content: "\f00d"; }

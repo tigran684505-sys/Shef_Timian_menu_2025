@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Канапе - Шеф Тимьян</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../furshet.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Назад к категориям
+            </a>
+            <h1 class="restaurant-name">
+                <i class="fas fa-bread-slice"></i> Канапе и мини-бутерброды
+            </h1>
+        </header>
+
+            <main class="main-content">
+            <div class="notes">
+                <p><i class="fas fa-info-circle"></i> Заказ оформляется за 3 дня до мероприятия</p>
+                 <p><i class="fas fa-info-circle"></i> Раздел НЕ ДОСТУПЕН к заказу</p>
+            </div>
+           
+            <!-- Таблица меню -->
+            <div class="menu-section">
+                <h2><i class="fas fa-list"></i> Список блюд</h2>
+                <div class="menu-table">
+                    <!-- Заголовок таблицы -->
+                    <div class="table-header">
+                        <div>Название блюда</div>
+                        <div>Выход, г</div>
+                        <div>Цена, руб.</div>
+                        <div>Состав</div>
+                    </div>
+
+                   <!-- Блюдо 1 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Шот с овощами «Похрустим»</strong>
+                        </div>
+                        <div class="col-weight">80 г</div>
+                        <div class="col-price">80 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc1">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc1">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Морковь, огурец, перец болгарский, сельдерей, мята</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 2 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Валован со сливочным сыром и ветчиной</strong>
+                        </div>
+                        <div class="col-weight">40 г</div>
+                        <div class="col-price">95 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc2">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc2">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Валован (слоёное тесто), сливочный сыр, ветчина, салат, помидор черри</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 3 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Шот с ветчиной и сыром</strong>
+                        </div>
+                        <div class="col-weight">25 г</div>
+                        <div class="col-price">120 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc3">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc3">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Сыр чеддер, ветчина, сыр моцарелла, песто из томатов</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 4 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Шот «Капрезе»</strong>
+                        </div>
+                        <div class="col-weight">30 г</div>
+                        <div class="col-price">90 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc4">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc4">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Помидор черри, сыр моцарелла, соус песто, салат</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 5 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе с сыром Дор Блю</strong>
+                        </div>
+                        <div class="col-weight">25 г</div>
+                        <div class="col-price">95 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc5">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc5">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Виноград, грецкий орех, сыр дор блю</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 6 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Брускета с вяленым мясом и артишоками</strong>
+                        </div>
+                        <div class="col-weight">25 г</div>
+                        <div class="col-price">140 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc6">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc6">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Хлеб пшеничный, мясо вяленое из говядины, крем с артишоками, маслина, петрушка</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 7 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе с сыром Каммабер</strong>
+                        </div>
+                        <div class="col-weight">18 г</div>
+                        <div class="col-price">90 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc7">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc7">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Сыр камамбер, голубика, мята</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 8 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Брускета с сёмгой и каперсами</strong>
+                        </div>
+                        <div class="col-weight">30 г</div>
+                        <div class="col-price">120 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc8">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc8">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Хлеб пшеничный, сыр творожный, сёмга, каперсы, авокадо</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 9 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе с Трюфельным сыром</strong>
+                        </div>
+                        <div class="col-weight">18 г</div>
+                        <div class="col-price">95 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc9">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc9">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Голубика, сыр трюфельный</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 10 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе с креветкой</strong>
+                        </div>
+                        <div class="col-weight">35 г</div>
+                        <div class="col-price">105 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc10">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc10">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Огурец свежий, чёрная тигровая креветка, оливка с лимоном</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 11 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе с сыром Бри</strong>
+                        </div>
+                        <div class="col-weight">18 г</div>
+                        <div class="col-price">85 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc11">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc11">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Сыр бри, виноград</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 12 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Канапе с уткой «Maгрэ»</strong>
+                        </div>
+                        <div class="col-weight">20 г</div>
+                        <div class="col-price">125 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc12">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc12">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Сыр бри, утка</p>
+                        </div>
+                    </div>
+
+                    <!-- Блюдо 13 -->
+                    <div class="table-row">
+                        <div class="col-name">
+                            <strong>Брускета с курицей и песто из томатов</strong>
+                        </div>
+                        <div class="col-weight">35 г</div>
+                        <div class="col-price">95 ₽</div>
+                        <div class="col-action">
+                            <button class="desc-btn" data-target="desc13">
+                                <i class="fas fa-info"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description-row" id="desc13">
+                        <div class="description-content">
+                            <p><strong>Состав:</strong> Хлеб пшеничный, мясо цыплёнка, песто из томатов, огурец свежий, помидор черри</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <footer class="footer">
+            <a href="../furshet.html" class="btn">
+                <i class="fas fa-arrow-left"></i> Назад к категориям
+            </a>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
