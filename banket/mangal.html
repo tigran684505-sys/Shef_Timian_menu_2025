@@ -11,7 +11,7 @@
     <div class="container">
         <header class="header">
             <a href="../banket.html" class="back-btn">
-                <i class="fas fa-arrow-left"></i> К категориям
+                <i class="fas fa-arrow-left"></i> Назад к категориям
             </a>
             <h1 class="restaurant-name">
                 <i class="fas fa-fire"></i> Мангал
@@ -24,24 +24,32 @@
                 <p><i class="fas fa-fire"></i> Все блюда готовятся на углях</p>
             </div>
 
-            <section class="menu-section">
-                <h2><i class="fas fa-fire"></i> Мангал</h2>
-                
+            <!-- Таблица меню -->
+            <div class="menu-section">
+                <h2><i class="fas fa-list"></i> Список блюд</h2>
                 <div class="menu-table">
+                    <!-- Заголовок таблицы -->
                     <div class="table-header">
-                        <div class="col-name">Название блюда</div>
-                        <div class="col-weight">Вес</div>
-                        <div class="col-price">Цена</div>
-                        <div class="col-action">Состав</div>
+                        <div>Название блюда</div>
+                        <div>Выход, г</div>
+                        <div>Цена, руб.</div>
+                        <div>Состав</div>
                     </div>
 
+                    <!-- Заголоовк Курица -->
+                    <div class="group-header-tab">
+                        <div class="col-name">
+                            <strong>Курица</strong>
+                        </div>
+                    </div>
+                   
                     <!-- Мангал 1 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Курица] Филе бедра (на коже)</strong>
+                            <strong>Филе бедра (на коже)</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">2200</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">2200 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill1">
                                 <i class="fas fa-info"></i>
@@ -57,10 +65,10 @@
                     <!-- Мангал 2 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Курица] Люля-кебаб (max/mini)</strong>
+                            <strong>Люля-кебаб (max/mini)</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">2200</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">2200 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill2">
                                 <i class="fas fa-info"></i>
@@ -76,10 +84,10 @@
                     <!-- Мангал 3 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Курица] Крыло</strong>
+                            <strong>Крыло</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">2000</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">2000 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill3">
                                 <i class="fas fa-info"></i>
@@ -95,10 +103,10 @@
                     <!-- Мангал 4 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Курица] Грудка</strong>
+                            <strong>Грудка</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">2200</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">2200 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill4">
                                 <i class="fas fa-info"></i>
@@ -114,10 +122,10 @@
                     <!-- Мангал 5 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Курица] Сувлаки (из филе)</strong>
+                            <strong>Сувлаки (из филе)</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">2200</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">2200 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill5">
                                 <i class="fas fa-info"></i>
@@ -133,10 +141,10 @@
                     <!-- Мангал 6 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Курица] Филе в беконе</strong>
+                            <strong>Филе в беконе</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">2200</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">2200 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill6">
                                 <i class="fas fa-info"></i>
@@ -152,10 +160,10 @@
                     <!-- Мангал 7 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Курица] По-хански (сердце, печень в сетке)</strong>
+                            <strong>По-хански (сердце, печень в сетке)</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">2500</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">2500 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill7">
                                 <i class="fas fa-info"></i>
@@ -168,13 +176,20 @@
                         </div>
                     </div>
 
+                    <!-- Заголоовк Баранина -->
+                    <div class="group-header-tab">
+                        <div class="col-name">
+                            <strong>Баранина</strong>
+                        </div>
+                    </div>
+
                     <!-- Мангал 8 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Баранина] Каре</strong>
+                            <strong>Каре</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">7000</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">7000 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill8">
                                 <i class="fas fa-info"></i>
@@ -190,10 +205,10 @@
                     <!-- Мангал 9 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Баранина] Мякоть</strong>
+                            <strong>Мякоть</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">4500</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">4500 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill9">
                                 <i class="fas fa-info"></i>
@@ -209,10 +224,10 @@
                     <!-- Мангал 10 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Баранина] Люля-кебаб (max/mini)</strong>
+                            <strong>Люля-кебаб (max/mini)</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">4500</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">4500 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill10">
                                 <i class="fas fa-info"></i>
@@ -225,13 +240,20 @@
                         </div>
                     </div>
 
+                    <!-- Заголоовк Свинина -->
+                    <div class="group-header-tab">
+                        <div class="col-name">
+                            <strong>Свинина</strong>
+                        </div>
+                    </div>
+
                     <!-- Мангал 11 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Свинина] Люля-кебаб (свино-говяжий)</strong>
+                            <strong>Люля-кебаб (свино-говяжий)</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">3000</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">3000 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill11">
                                 <i class="fas fa-info"></i>
@@ -247,10 +269,10 @@
                     <!-- Мангал 12 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Свинина] Шея</strong>
+                            <strong>Шея</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">3000</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">3000 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill12">
                                 <i class="fas fa-info"></i>
@@ -266,10 +288,10 @@
                     <!-- Мангал 13 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Свинина] Рёбрышки</strong>
+                            <strong>Рёбрышки</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">3000</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">3000 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill13">
                                 <i class="fas fa-info"></i>
@@ -285,10 +307,10 @@
                     <!-- Мангал 14 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Свинина] Сувлаки</strong>
+                            <strong>Сувлаки</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">3000</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">3000 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill14">
                                 <i class="fas fa-info"></i>
@@ -301,13 +323,20 @@
                         </div>
                     </div>
 
+                    <!-- Заголоовк Рыба -->
+                    <div class="group-header-tab">
+                        <div class="col-name">
+                            <strong>Рыба</strong>
+                        </div>
+                    </div>
+
                     <!-- Мангал 15 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Рыба] Сёмга</strong>
+                            <strong>Сёмга</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">5500</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">5500 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill15">
                                 <i class="fas fa-info"></i>
@@ -323,10 +352,10 @@
                     <!-- Мангал 16 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Рыба] Сазан гриль</strong>
+                            <strong>Сазан гриль</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">2800</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">2800 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill16">
                                 <i class="fas fa-info"></i>
@@ -339,13 +368,20 @@
                         </div>
                     </div>
 
+                    <!-- Заголоовк Телятина -->
+                    <div class="group-header-tab">
+                        <div class="col-name">
+                            <strong>Телятина</strong>
+                        </div>
+                    </div>
+
                     <!-- Мангал 17 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Телятина] Филе миньон</strong>
+                            <strong>Филе миньон</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">5500</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">5500 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill17">
                                 <i class="fas fa-info"></i>
@@ -361,10 +397,10 @@
                     <!-- Мангал 18 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Телятина] Люля-кебаб (max/mini) с курдюком</strong>
+                            <strong>Люля-кебаб (max/mini) с курдюком</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">4000</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">4000 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill18">
                                 <i class="fas fa-info"></i>
@@ -380,10 +416,10 @@
                     <!-- Мангал 19 -->
                     <div class="table-row">
                         <div class="col-name">
-                            <strong>[Телятина] Печень (в жировой сетке)</strong>
+                            <strong>Печень (в жировой сетке)</strong>
                         </div>
-                        <div class="col-weight">1 кг</div>
-                        <div class="col-price">3000</div>
+                        <div class="col-weight">1000 г</div>
+                        <div class="col-price">3000 ₽</div>
                         <div class="col-action">
                             <button class="desc-btn" data-target="grill19">
                                 <i class="fas fa-info"></i>
@@ -401,9 +437,14 @@
 
         <footer class="footer">
             <a href="../banket.html" class="btn">
-                <i class="fas fa-arrow-left"></i> К другим категориям
+                <i class="fas fa-arrow-left"></i> Назад к категориям
             </a>
         </footer>
+        </footer>
+                <div class="beta-badge">
+            <span class="beta-label">BETA</span>
+            <span class="beta-text">Версия в активной разработке</span>
+        </div>
     </div>
 
     <script src="../script.js"></script>
