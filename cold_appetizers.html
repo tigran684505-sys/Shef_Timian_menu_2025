@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#19372c">
+    <title>Холодные закуски — Шеф Тимьян</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Строка без состава: у неё нет кнопки раскрытия */
+        .fd-dish--plain .fd-dish-static {
+            min-height: 69px;
+            padding: 13px 20px;
+            display: grid;
+            grid-template-columns: 38px minmax(0, 1fr) 75px 95px;
+            align-items: center;
+            gap: 13px;
+        }
+        @media (max-width: 650px) {
+            .fd-dish--plain .fd-dish-static {
+                min-height: 66px;
+                padding: 12px 10px;
+                grid-template-columns: 24px minmax(0, 1fr) 48px 65px;
+                gap: 7px;
+            }
+        }
+        @media (max-width: 370px) {
+            .fd-dish--plain .fd-dish-static {
+                padding: 10px 7px;
+                grid-template-columns: 20px minmax(0, 1fr) 42px 57px;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body class="furshet-dishes-page">
+    <div class="fd-container">
+        <header class="fd-header">
+            <a href="../banket.html" class="fd-back">
+                <i class="fas fa-arrow-left"></i>
+                <span>Назад к категориям</span>
+            </a>
+            <a href="../index.html" class="fd-brand">
+                <i class="fas fa-leaf"></i>
+                <span>Шеф Тимьян</span>
+            </a>
+            <span class="fd-header-label">БАНКЕТНОЕ МЕНЮ</span>
+        </header>
+
+        <section class="fd-hero">
+            <span class="fd-eyebrow">БАНКЕТНОЕ МЕНЮ · ШЕФ ТИМЬЯН</span>
+            <h1>Холодные <em>закуски</em></h1>
+            <p>Изысканное дополнение к праздничному столу</p>
+            <div class="fd-ornament" aria-hidden="true">
+                <span></span><i class="fas fa-leaf"></i><span></span>
+            </div>
+        </section>
+
+        <section class="canape-menu-section">
+
+                <div class="canape-intro">
+                <div>
+                    <span class="fd-overline">ВЫБОР ШЕФА</span>
+                    <h2>Список блюд</h2>
+                </div>
+                <p>23 позиции</p>
+            </div>
+        
+            <div class="fd-notice">
+                <div><i class="far fa-calendar-alt"></i></div>
+                <p>Заказ оформляется за 3 дня до мероприятия</p>
+            </div>
+
+            <div class="fd-menu-list">
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">01</span>
+                <span class="fd-dish-name">Мясное ассорти</span>
+                <span class="fd-dish-weight">400 г</span>
+                <span class="fd-dish-price">1250 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Буженина, рулет куриный, язык говяжий, горчица, корнишоны, маслины</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">02</span>
+                <span class="fd-dish-name">Ассорти «Кавказ»</span>
+                <span class="fd-dish-weight">50 г</span>
+                <span class="fd-dish-price">480 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Бастурма, суджук</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">03</span>
+                <span class="fd-dish-name">Язык отварной</span>
+                <span class="fd-dish-weight">120/30 г</span>
+                <span class="fd-dish-price">700 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Язык говяжий отварной, соус сливочный с хреном</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">04</span>
+                <span class="fd-dish-name">Рулеты из говяжьего языка</span>
+                <span class="fd-dish-weight">240 г (4-6 шт)</span>
+                <span class="fd-dish-price">1180 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Говяжий язык, сыр «Филадельфия», перец болгарский, зелень</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">05</span>
+                <span class="fd-dish-name">Ассорти из сала</span>
+                <span class="fd-dish-weight">170 г</span>
+                <span class="fd-dish-price">550 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Сало, корнишоны, горчица, бородинский хлеб</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">06</span>
+                <span class="fd-dish-name">Овощной микс с зеленью</span>
+                <span class="fd-dish-weight">350 г</span>
+                <span class="fd-dish-price">450 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Помидор, огурец, перец сладкий, редис (нарезка)</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">07</span>
+                <span class="fd-dish-name">Овощная корзина</span>
+                <span class="fd-dish-weight">1000 г</span>
+                <span class="fd-dish-price">670 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Помидор, огурец, перец сладкий, перец острый, редис (целые овощи)</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">08</span>
+                <span class="fd-dish-name">Зелень свежая</span>
+                <span class="fd-dish-weight">50 г</span>
+                <span class="fd-dish-price">230 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Свежая зелень в ассортименте (по сезону)</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">09</span>
+                <span class="fd-dish-name">Сыры «Кавказа»</span>
+                <span class="fd-dish-weight">270/30 г</span>
+                <span class="fd-dish-price">590 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Брынза, сулугуни, пряди, грецкий орех, зелень</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">10</span>
+                <span class="fd-dish-name">Ассорти европейских сыров</span>
+                <span class="fd-dish-weight">350/50 г</span>
+                <span class="fd-dish-price">2000 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Дорблю, пармезан, бри, грецкий орех, мёд</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">11</span>
+                <span class="fd-dish-name">Соленья в ассортименте</span>
+                <span class="fd-dish-weight">350 г</span>
+                <span class="fd-dish-price">530 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Капуста квашеная, помидор, огурец, перец острый, чеснок</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">12</span>
+                <span class="fd-dish-name">Малосольная сельдь</span>
+                <span class="fd-dish-weight">280/20 г</span>
+                <span class="fd-dish-price">400 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Сельдь малосольная, лук маринованный, картофель отварной</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">13</span>
+                <span class="fd-dish-name">Сазан фаршированный</span>
+                <span class="fd-dish-weight">200 г</span>
+                <span class="fd-dish-price">800 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Сазан, кедровые орешки, сливки, белый хлеб</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">14</span>
+                <span class="fd-dish-name">Баклажаны жаренные</span>
+                <span class="fd-dish-weight">200 г</span>
+                <span class="fd-dish-price">450 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Баклажаны, кинза, чеснок</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">15</span>
+                <span class="fd-dish-name">Рулетики из баклажан</span>
+                <span class="fd-dish-weight">60 г (2 шт)</span>
+                <span class="fd-dish-price">120 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Баклажаны, грецкий орех, кинза, чеснок, мягкий сыр, помидор</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">16</span>
+                <span class="fd-dish-name">Лобио</span>
+                <span class="fd-dish-weight">200 г</span>
+                <span class="fd-dish-price">400 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Фасоль, грецкий орех, репчатый лук, зелень</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">17</span>
+                <span class="fd-dish-name">Профитроли с печёночным муссом</span>
+                <span class="fd-dish-weight">35 г</span>
+                <span class="fd-dish-price">90 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Печень куриная, сливки, лук, морковь, масло оливковое</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">18</span>
+                <span class="fd-dish-name">Маслины, оливки</span>
+                <span class="fd-dish-weight">150 г</span>
+                <span class="fd-dish-price">450 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Маслины, оливки в ассортименте</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">19</span>
+                <span class="fd-dish-name">Лимон</span>
+                <span class="fd-dish-weight">100 г</span>
+                <span class="fd-dish-price">100 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Лимон свежий</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">20</span>
+                <span class="fd-dish-name">Маринованные грибы</span>
+                <span class="fd-dish-weight">200 г</span>
+                <span class="fd-dish-price">420 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Грибы маринованные в ассортименте</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">21</span>
+                <span class="fd-dish-name">Рыбное ассорти</span>
+                <span class="fd-dish-weight">300/100 г</span>
+                <span class="fd-dish-price">2400 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Семга слабосоленая, угорь копченый, масляная рыба, огурец, лимон, маслины, соус унаги, кунжут</div>
+        </details>
+
+        <details class="fd-dish">
+            <summary>
+                <span class="fd-dish-number">22</span>
+                <span class="fd-dish-name">Крученики с семгой</span>
+                <span class="fd-dish-weight">200 г</span>
+                <span class="fd-dish-price">1100 ₽</span>
+                <span class="fd-dish-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="fd-dish-description"><strong>Состав:</strong> Блин, семга слабосоленая, соус сметанный</div>
+        </details>
+
+        <article class="fd-dish fd-dish--plain">
+            <div class="fd-dish-static">
+                <span class="fd-dish-number">23</span>
+                <span class="fd-dish-name">Семга слабосоленая</span>
+                <span class="fd-dish-weight">200 г</span>
+                <span class="fd-dish-price">1500 ₽</span>
+            </div>
+        </article>
+            </div>
+
+            <div class="fd-bottom-note">
+                <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                <p>Нажмите на плюс, чтобы посмотреть состав блюда</p>
+            </div>
+        </main>
+
+        <footer class="fd-footer">
+            <a href="../banket.html" class="fd-footer-button">
+                <i class="fas fa-arrow-left"></i>
+                Назад к категориям
+            </a>
+            <p>Шеф Тимьян · Банкетное меню</p>
+            <div class="beta-badge">
+                <span class="beta-label">BETA</span>
+                <span class="beta-text">Версия в активной разработке</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
